@@ -1,0 +1,17 @@
+@font-face {
+  font-family: montserratRegular;
+  src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: montserratThin;
+  src: url('./assets/fonts/Montserrat-Thin.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  background-color: #c1c1c1;
+  box-sizing: border-box;
+}
