@@ -23,6 +23,45 @@
 }
 
 .calculator-body {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100%/3));
   background-color: #3B3B3B;
   flex: 3;
 }
+
+.name-break {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.calculator-title {
+  font-family: 'montserratRegular', sans-serif;
+  font-size: 2rem;
+  margin: 2rem 0 .250rem 0;
+  color: #B8FC4E;
+}
+
+form > label {
+  font-size: .750rem;
+  color: #B8FC4E;
+  margin: 0 .625rem;
+}
+
+form > input {
+  width: 6rem;
+}
+
+form > button {
+  background-color: #B8FC4E;
+  font-size: .750rem;
+  padding: .375rem;
+  border: none;
+  margin: .750rem 1rem;
+  border-radius: .250rem;
+}
+
+.display-title-operation {
+  font-size: .750rem;
+  color: #5B669A;
+}
+

@@ -9,8 +9,35 @@
 </head>
 <body>
   <div class="calculator-container">
-    <div class="calculator-header">a</div>
-    <div class="calculator-body"></div>
+    <div class="calculator-header">
+      <h1 class="calculator-title">Super Calculator</h1>
+      <form action="#">
+        <label for="first-number">First Number (X)</label>
+        <input type="text" id="first-number" name="first-number">
+
+        <label for="second-number">Second Number (Y)</label>
+        <input type="text" id="second-number" name="second-number">
+
+        <button type="button">Calculate</button>
+      </form>
+    </div>
+    <div class="calculator-body">
+      <div><p class="display-title-operation">Sum</p></div>
+      <div><p class="display-title-operation">Subtraction (X − Y)</div>
+      <div><p class="display-title-operation">Subtraction (Y − X)</p></div>
+      <div><p class="display-title-operation">Multiplication</p></div>
+      <div><p class="display-title-operation">Division (X ÷ Y)</p></div>
+      <div><p class="display-title-operation">Division (Y ÷ X)</p></div>
+      <div><p class="display-title-operation">Power of X in base Y</p></div>
+      <div><p class="display-title-operation">Power of Y in base X</p></div>
+      <div><p class="display-title-operation">Square Root X</p></div>
+      <div><p class="display-title-operation">Square Root Y</p></div>
+      <div><p class="display-title-operation">Factorial of X</p></div>
+      <div><p class="display-title-operation">Factorial of Y</p></div>
+      <div><p class="display-title-operation name-break">Percentage of X in relation to Y</p></div>
+      <div><p class="display-title-operation name-break">Percentage of Y in relation to X</p></div>
+      <div><p class="display-title-operation">Averange</p></div>
+    </div>
   </div>
 
   <script src="./assets/js/script.js"></script>
