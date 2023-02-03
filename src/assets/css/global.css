@@ -1,20 +1,19 @@
 @font-face {
+  src: url('../fonts/MontserratRegular.ttf') format('truetype');
   font-family: montserratRegular;
-  src: url('./assets/fonts/Montserrat-Regular.ttf');
 }
 
 @font-face {
-  font-family: montserratThin;
-  src: url('./assets/fonts/Montserrat-Thin.ttf');
+  src: url('../fonts/MontserratSemiBold.ttf') format('truetype');
+  font-family: montserratSemiBold;
 }
 
 * {
-  font-family: 'montserratThin', monospace;
+  font-family: 'montserratSemiBold', monospace;
 }
 
 body {
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;

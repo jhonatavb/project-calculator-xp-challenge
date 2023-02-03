@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Calculator XP Challenge</title>
+  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="./src/assets/images/favicon.svg">
 </head>
+
 <body>
   <div class="calculator-container">
     <div class="calculator-header">
@@ -18,28 +21,29 @@
         <label for="second-number">Second Number (Y)</label>
         <input type="text" id="second-number" name="second-number">
 
-        <button type="button">Calculate</button>
+        <button class="btn-calculate" type="button">Calculate</button>
       </form>
     </div>
     <div class="calculator-body">
-      <div><p class="display-title-operation">Sum</p></div>
-      <div><p class="display-title-operation">Subtraction (X − Y)</div>
-      <div><p class="display-title-operation">Subtraction (Y − X)</p></div>
-      <div><p class="display-title-operation">Multiplication</p></div>
-      <div><p class="display-title-operation">Division (X ÷ Y)</p></div>
-      <div><p class="display-title-operation">Division (Y ÷ X)</p></div>
-      <div><p class="display-title-operation">Power of X in base Y</p></div>
-      <div><p class="display-title-operation">Power of Y in base X</p></div>
-      <div><p class="display-title-operation">Square Root X</p></div>
-      <div><p class="display-title-operation">Square Root Y</p></div>
-      <div><p class="display-title-operation">Factorial of X</p></div>
-      <div><p class="display-title-operation">Factorial of Y</p></div>
-      <div><p class="display-title-operation name-break">Percentage of X in relation to Y</p></div>
-      <div><p class="display-title-operation name-break">Percentage of Y in relation to X</p></div>
-      <div><p class="display-title-operation">Averange</p></div>
+      <div class="container-operation"><p class="display-title-operation">Sum</p></div>
+      <div class="container-operation"><p class="display-title-operation">Subtraction (X − Y)</div>
+      <div class="container-operation"><p class="display-title-operation">Subtraction (Y − X)</p></div>
+      <div class="container-operation"><p class="display-title-operation">Multiplication</p></div>
+      <div class="container-operation"><p class="display-title-operation">Division (X ÷ Y)</p></div>
+      <div class="container-operation"><p class="display-title-operation">Division (Y ÷ X)</p></div>
+      <div class="container-operation"><p class="display-title-operation">Power of X in base Y</p></div>
+      <div class="container-operation"><p class="display-title-operation">Power of Y in base X</p></div>
+      <div class="container-operation"><p class="display-title-operation">Square Root X</p></div>
+      <div class="container-operation"><p class="display-title-operation">Square Root Y</p></div>
+      <div class="container-operation"><p class="display-title-operation">Factorial of X</p></div>
+      <div class="container-operation"><p class="display-title-operation">Factorial of Y</p></div>
+      <div class="container-operation"><p class="display-title-operation">Percentage of X in relation to Y</p></div>
+      <div class="container-operation"><p class="display-title-operation">Percentage of Y in relation to X</p></div>
+      <div class="container-operation"><p class="display-title-operation">Averange</p></div>
     </div>
   </div>
 
-  <script src="./assets/js/script.js"></script>
+  <script src="./src/assets/js/script.js"></script>
 </body>
+
 </html>

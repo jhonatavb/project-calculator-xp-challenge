@@ -3,7 +3,7 @@
 .calculator-container {
   display: flex;
   flex-direction: column;
-  background-color: green;
+  background-color: #3B3B3B;
   position: absolute;
   width: 605px;
   height: 450px;
@@ -12,6 +12,8 @@
   text-align: center;
   border-radius: 20px;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .calculator-header {
@@ -25,19 +27,16 @@
 .calculator-body {
   display: grid;
   grid-template-columns: repeat(3, calc(100%/3));
-  background-color: #3B3B3B;
+  align-items: center;
   flex: 3;
-}
-
-.name-break {
-  width: 50%;
-  margin: 0 auto;
+  background-color: #3B3B3B;
+  min-width: 100%;
 }
 
 .calculator-title {
   font-family: 'montserratRegular', sans-serif;
   font-size: 2rem;
-  margin: 2rem 0 .250rem 0;
+  margin: 1.25rem 0 .250rem 0;
   color: #B8FC4E;
 }
 
@@ -49,19 +48,46 @@ form > label {
 
 form > input {
   width: 6rem;
+  height: .625rem;
+  border-radius: .250rem;
+  padding: .250rem;
+}
+
+form > input:focus {
+  outline: .125rem solid #B8FC4E;
 }
 
 form > button {
+  text-decoration: none;
+  border: none;
+  outline: none;
   background-color: #B8FC4E;
   font-size: .750rem;
-  padding: .375rem;
-  border: none;
+  padding: .250rem;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
   margin: .750rem 1rem;
   border-radius: .250rem;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+form > button:active {
+  transform: scale(0.96);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.container-operation {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .display-title-operation {
-  font-size: .750rem;
+  margin: .625rem 0;
   color: #5B669A;
+}
+
+.result-operation {
+  margin: 0;
+  font-size: .750rem;
 }
 
